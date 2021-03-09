@@ -8,6 +8,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 //import controllers
 const users = require("./controllers/users");
+const createCollection = require ("./controllers/createCollections");
 
 (async () => {
     const db = await databaseConnexion();
